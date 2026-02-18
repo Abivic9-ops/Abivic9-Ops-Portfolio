@@ -1,7 +1,7 @@
 /* Importing Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* The Styles that are applied to the whole page */
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +9,7 @@
     list-style: none;
     scroll-behavior: smooth;
     text-decoration: none;
+    cursor: pointer;
 }
 
 :root {
@@ -90,14 +91,15 @@ span {
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    opacity: 2;
+    /* opacity: 2; */
 }
 
 .navlist a:hover {
     color: #0ef;
-    transform: scale(1) translateY(0);
-    transform: translateY(-35px);
-    opacity: 0;
+    transform: translateY(-20px);
+    /* opacity: 0; */
+        /* transform: scale(1) translateY(0); */
+
 
 }
 
@@ -661,12 +663,11 @@ span {
 }
 
 .box-7 h3:hover {
-    color: rgb(196, 9, 196);
+    color: rgb(163, 5, 163);
         transform: translateY(-10px);
-        animation: forwards;
 }
 
-.box-6 p {
+.box-7 p {
     max-width: 300px;
     transition: 2s;
         margin-top: 5px;
@@ -674,8 +675,8 @@ span {
 }
    
 
-.box-6 p:hover{
-    color: rgb(196, 9, 196);
+.box-7 p:hover{
+    color: rgb(163, 5, 163);
     transform: translateY(20px); 
 }  
 
@@ -730,7 +731,7 @@ span {
 .skills-icons a {
     border: 2px solid #8d8e8f;
     display: inline-flex;
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 40px;
     margin: 30px;
     background: #d4d7df;
@@ -766,4 +767,46 @@ span {
         transform: rotate(360deg);
         scale: 0.5;
     }
+}
+
+/* Footer Styling */
+.title-3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3.0rem;
+}
+
+.title-3 h1 {
+    color: #37a1f2;
+    transition: 2s;
+}
+.title-3 h1:hover{
+    transform: translateY(-10px);
+}
+
+.title-3 h2 {
+    color: #c7c6c9;
+    transition: 500ms;
+    font-size: 1.6rem;
+}
+
+.title-3 h2:hover {
+    color: plum;
+    transform: translate(-20px);
+}
+
+.section-footer{
+    background: #ffffff;
+    /* background-image: url(images/footer_image.png); */
+    width: 100%;
+    height: 90%;
+    padding: 60px;
+    justify-content:space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    animation: forwards;
+    animation-duration: 3s;
+
 }
