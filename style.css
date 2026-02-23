@@ -5,7 +5,7 @@
 * {
     padding: 0;
     margin: 0;
-        box-sizing: border-box;
+    box-sizing: border-box;
     list-style: none;
     scroll-behavior: smooth;
     text-decoration: none;
@@ -1441,7 +1441,7 @@ span {
 
 }
 
-.main-text{
+.main-text {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1449,7 +1449,7 @@ span {
     margin: 30px;
 }
 
-.main-text h1{
+.main-text h1 {
     transition: 2s;
 }
 
@@ -1458,17 +1458,17 @@ span {
     color: #37a1f2;
 }
 
-.main-text h2{
-   font-size: 20px;
+.main-text h2 {
+    font-size: 20px;
 }
 
-.main-text h2:hover{
- text-decoration:underline;
- color: #0ac733;
+.main-text h2:hover {
+    text-decoration: underline;
+    color: #0ac733;
 }
 
 .skills-main {
-   
+
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1591,25 +1591,27 @@ span {
 
 /* skill right */
 
-.professional{
+.professional {
     display: flex;
-flex-direction: column;
-gap: 10px;
-justify-content: center;
-align-items: center;
-}
-
-.boxed-main{
-    padding: 20px;
-    margin: 20px;}
-   
-.boxed-sub{
-     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
-.boxed-sub h3{
+
+.boxed-main {
+    padding: 20px;
+    margin: 20px;
+}
+
+.boxed-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxed-sub h3 {
     border-style: double solid;
     border: 2px solid #240720;
     border-radius: 100%;
@@ -1623,20 +1625,21 @@ align-items: center;
     font-size: 24px;
 }
 
-.boxed-sub h3:hover{
+.boxed-sub h3:hover {
     border-color: #37a1f2;
 }
 
-.boxed-sub p{
+.boxed-sub p {
     font-size: 20px;
     color: #37a1f2;
     transition: 2s;
 }
 
-.boxed-sub p:hover{
+.boxed-sub p:hover {
     transform: translateY(-15px);
     color: #fff;
 }
+
 /*.boxed-sub{
     text-align: center;
     color: #fff;
@@ -1692,26 +1695,54 @@ animation-delay: calc(var(--i)*0.05s);
 
 /* Styling of the Portfolio page */
 .portfolio {
-    background: #575c66;
-     padding: 20px;
-    margin: 20px;
-    
+    background: #8a8f97;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 45px;
+    height: 100%;
+    padding-bottom: 40px;
+
 }
 
-.portfolio h2{
-    margin-bottom: 2rem;
+.main-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
-.portfolio-container{
+.main-info h2 {
+    color: #081a27;
+    font-size: 35px;
+}
+
+.heading{
+font-size: 20px;
+    color: #081a27;
+
+}
+
+.main-info p {
+    color: #081a27;
+    font-size: 23px;
+
+}
+
+
+.portfolio h2 {
+    margin-bottom: 1.3rem;
+}
+
+.portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.0rem;
-   
-   
+
+
 }
 
-.portfolio-container .portfolio-box{
+.portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem #37a1f2;
@@ -1719,17 +1750,17 @@ animation-delay: calc(var(--i)*0.05s);
     display: flex;
 }
 
-.portfolio-box img{
+.portfolio-box img {
     width: 100%;
     transition: .3s ease;
 }
 
-.portfolio-box:hover img{
+.portfolio-box:hover img {
     transform: scale(1.1);
 }
 
 
-.portfolio-box .portfolio-layer{
+.portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1739,7 +1770,7 @@ animation-delay: calc(var(--i)*0.05s);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0),#12f7ff);
+    background: linear-gradient(rgba(0, 0, 0, 0), #12f7ff);
     text-align: center;
     padding: 0.4rem;
     transform: translateY(100%);
@@ -1747,23 +1778,23 @@ animation-delay: calc(var(--i)*0.05s);
     /* opacity: 0; */
 }
 
-.portfolio-box:hover .portfolio-layer{
-transform: translate(0);
+.portfolio-box:hover .portfolio-layer {
+    transform: translate(0);
 }
 
 
-.portfolio-layer h3{
+.portfolio-layer h3 {
     font-size: 1.6em;
     color: #fff;
 }
 
-.portfolio-layer p{
-        color: #fff;
-font-size: 1.0rem;
-margin: .3rem 0 1rem;
+.portfolio-layer p {
+    color: #fff;
+    font-size: 1.0rem;
+    margin: .3rem 0 1rem;
 }
 
-.portfolio-layer a{
+.portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1773,6 +1804,6 @@ margin: .3rem 0 1rem;
     background-color: #fff;
 }
 
-.portfolio-layer a i{
+.portfolio-layer a i {
     font-size: large;
 }
