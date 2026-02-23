@@ -1690,3 +1690,89 @@ animation-delay: calc(var(--i)*0.05s);
 
 /*  */
 
+/* Styling of the Portfolio page */
+.portfolio {
+    background: #575c66;
+     padding: 20px;
+    margin: 20px;
+    
+}
+
+.portfolio h2{
+    margin-bottom: 2rem;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.0rem;
+   
+   
+}
+
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #37a1f2;
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img{
+    width: 100%;
+    transition: .3s ease;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0),#12f7ff);
+    text-align: center;
+    padding: 0.4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    /* opacity: 0; */
+}
+
+.portfolio-box:hover .portfolio-layer{
+transform: translate(0);
+}
+
+
+.portfolio-layer h3{
+    font-size: 1.6em;
+    color: #fff;
+}
+
+.portfolio-layer p{
+        color: #fff;
+font-size: 1.0rem;
+margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.portfolio-layer a i{
+    font-size: large;
+}
