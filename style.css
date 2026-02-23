@@ -5,7 +5,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+        box-sizing: border-box;
     list-style: none;
     scroll-behavior: smooth;
     text-decoration: none;
@@ -1434,33 +1434,259 @@ span {
 /* Styling of the Skills  */
 
 .skills {
-    background: #3c4149;
+    background: #d6d2dd;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 45px;
 
 }
 
+.main-text{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+.main-text h1{
+    transition: 2s;
+}
+
+.main-text h1:hover {
+    transform: translateY(-10px);
+    color: #37a1f2;
+}
+
+.main-text h2{
+   font-size: 20px;
+}
+
+.main-text h2:hover{
+ text-decoration:underline;
+ color: #0ac733;
+}
+
 .skills-main {
+   
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
     grid-column-gap: 50px;
-
+    padding: 50px;
+    margin: 40px;
 }
 
 .skill-bar {
-    margin-bottom: 2.3rem;
+    margin-bottom: 2.0rem;
 }
 
-.skills-main h3{
+.skills-main h3 {
     margin-bottom: 2rem;
     font-size: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #37a1f2;
+    transition: 2s;
 }
 
-.skill-left .skill-bar .info{
+.skills-main h3:hover {
+    color: #ffffff;
+    transform: translateY(-10px);
+}
+
+/* 
+.skill-left  */
+.skill-left .skill-bar .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 }
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 25px;
+    margin-top: 18px;
+    background-color: #240720;
+    position: relative;
+}
+
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #37a1f2;
+    border-radius: 30px;
+    box-shadow: #12f7ff;
+    padding: 5px;
+}
+
+.skill-bar .bar .html {
+    width: 72%;
+    animation: html 3s;
+}
+
+.skill-bar .bar .figma {
+    width: 80%;
+    animation: figma 4s;
+
+}
+
+.skill-bar .bar .javascript {
+    width: 65%;
+    animation: javascript 5s;
+
+}
+
+.skill-bar .bar .CSS {
+    width: 75%;
+    animation: CSS 6s;
+
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 72%;
+    }
+}
+
+
+@keyframes figma {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes CSS {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+/* skill right */
+
+.professional{
+    display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: center;
+align-items: center;
+}
+
+.boxed-main{
+    padding: 20px;
+    margin: 20px;}
+   
+.boxed-sub{
+     display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.boxed-sub h3{
+    border-style: double solid;
+    border: 2px solid #240720;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.boxed-sub h3:hover{
+    border-color: #37a1f2;
+}
+
+.boxed-sub p{
+    font-size: 20px;
+    color: #37a1f2;
+    transition: 2s;
+}
+
+.boxed-sub p:hover{
+    transform: translateY(-15px);
+    color: #fff;
+}
+/*.boxed-sub{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.boxed-sub big{
+font: 400;
+letter-spacing: 1px;
+position: absolute;
+top:40%;
+left:50%;
+transform: translate(-50%, -50%);
+}
+
+.boxed-sub small{
+    display: block;
+    font-weight: 600;
+} */
+/* to be done after i learn Java to the fullest */
+/* 
+.circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+.circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: #fff;
+    position:absolute;
+    border-radius: 2px;
+    transform: rotate(calc(var(--i)*var(--rot)))translateY(-45px);
+animation:glow 0.4s linear forwards ;
+animation-delay: calc(var(--i)*0.05s);
+}
+
+@keyframes glow{
+    0%{
+        background:rgb(102, 102, 231) ;
+        box-shadow: none;
+    }
+    100%{
+        background:#37a1f2 ;
+        box-shadow: #0ef;
+    }
+} */
+
+/*  */
+
