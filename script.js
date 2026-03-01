@@ -55,3 +55,64 @@ setInterval(changeText,3000)
 //     elem.innerHTML = points;
 
 // })
+
+// // Select the elements from your HTML
+// let menuIcon = document.querySelector("#menu-icon");
+// let navlist = document.querySelector(".navlist");
+
+// // Toggle the 'open' class when the icon is clicked
+// menuIcon.onclick = () => {
+//     menuIcon.classList.toggle("bx-x");
+//     navlist.classList.toggle("open");  
+// };
+
+// // Close the menu automatically when the user scrolls
+// window.onscroll = () => {
+//     menuIcon.classList.remove("bx-x");
+//     navlist.classList.remove("open");
+// };
+
+// // // Wait for the DOM to fully load
+// document.addEventListener('DOMContentLoaded', () => {
+//     const menuIcon = document.querySelector('#menu-icon');
+//     const navlist = document.querySelector('.navlist');
+
+//     // Check if the elements exist on the current page to avoid errors
+//     if (menuIcon && navlist) {
+//         menuIcon.addEventListener('click', () => {
+//             // Toggle the 'bx-x' class (changes hamburger to 'X' if using Boxicons)
+//             menuIcon.classList.toggle('bx-x');
+//             // Toggle the open class on the navigation list
+//             navlist.classList.toggle('open');
+//         });
+
+//         // Optional: Close menu when a link is clicked
+//         navlist.addEventListener('click', () => {
+//             menuIcon.classList.remove('bx-x');
+//             navlist.classList.remove('open');
+//         });
+//     }
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // We use ID for the icon and class for the list as seen in your code
+    const menuIcon = document.querySelector('#menu-icon');
+    const navlist = document.querySelector('.navlist');
+
+    if (menuIcon && navlist) {
+        menuIcon.onclick = () => {
+            // Toggles the 'X' icon
+            menuIcon.classList.toggle('bx-x');
+            // Toggles the menu visibility
+            navlist.classList.toggle('open');
+        };
+
+        // Close menu when a link is clicked (useful for multi-page)
+        navlist.onclick = () => {
+            menuIcon.classList.remove('bx-x');
+            navlist.classList.remove('open');
+        };
+    } else {
+        console.error("Menu Icon or Navlist missing on this page!");
+    }
+});

@@ -1825,10 +1825,10 @@ animation-delay: calc(var(--i)*0.05s);
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 25px;
+    padding: 45px;
     /* border: 2px black solid; */
     background: #c8c9cc;
-    border-radius: 40px;
+    border-radius: 45px;
 }
 
 .main-contact-info h2 {
@@ -2011,4 +2011,468 @@ button:hover{
     color: #444;
     filter: brightness(0.9);
     box-shadow: 0 10px 15px -3px rgba(37, 99,235,0.4);
+}
+
+
+
+/* THE MEDIA QUERY SECTION */
+
+ @media screen and (max-width: 1024px) {
+    /* Fix the navigation sidebar */
+    #menu-icon {
+        display: block !important;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    .navlist {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 200px;
+        height: 100vh;
+        background:#fafafc;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        padding: 90px 30px;
+        transition: all 0.45s ease;
+        z-index: 10000;
+    }
+
+    .navlist.open {
+        right: 0; 
+    }
+    .container{
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        width: auto;
+        border-radius: 25px;
+    }
+.home{
+    display: flex;
+    flex-direction: column;
+    padding:100px 5%;
+text-align: center;
+}
+.home-content{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.home-content h1{
+    font-size: 3.5rem;
+    
+}
+.change-text{
+    margin: 10px 0;
+    text-align: left;
+}
+.change-text h3{
+    font-size:24px;
+    text-align: left;
+}
+.home-content p{
+font-size: 20px;
+max-width: 300px;
+padding: o 10px;
+}
+.home-content .text{
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    line-height: 1.6;
+}
+.about-content{
+  justify-content: center;
+    align-items: center;
+   
+ }
+ .main-container{
+   display: flex;  
+   flex-wrap: wrap;
+ }
+.main-container[class^="box-"]{
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    font-size: 18px;
+    
+
+}
+.box-3 {
+    height: fit-content;
+}
+
+.box-7{
+    height: fit-content;
+}
+.box-6{
+    height: fit-content;
+}
+
+.skills-container{
+     padding: 0 ;
+    margin: 0;
+}
+.skills-container .title-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 ;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.title-2 h1{
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.title-2 h3{
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 10px;
+}
+.skills-icons a{
+width:55px ;
+height: 55px;
+font-size: 1.8rem;
+}
+}
+
+
+/* For Mobile Devices Majorly */
+
+ @media screen and (max-width: 768px) {
+    /* Fix the navigation sidebar */
+    #menu-icon {
+        display: block !important;
+        transition: all .4s ease;
+        /* font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+    */
+    }
+      #menu-icon .bx-x{
+        transform: rotate(-180deg);
+      }
+
+     .navlist {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 200px;
+        height: 100vh;
+        background:#fafafc;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        padding: 90px 30px;
+        transition: all 0.45s ease;
+        z-index: 10000;}
+ 
+
+    .navlist.open {
+    right: 0;
+    }
+    .container{
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        width: auto;
+        border-radius: 25px;
+        overflow: visible !important;
+    }
+.home{
+    display: flex;
+    flex-direction: column-reverse;
+    padding:40px 20px;
+text-align: center;
+}
+.home-content{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    order: 2;
+}
+
+.home-content h1{
+    font-size: 32px;
+    
+}
+.change-text{
+    margin: 10px 0;
+    text-align: left;
+}
+.change-text h3{
+    font-size:22px;
+    text-align: left;
+}
+.home-content p{
+font-size: 20px;
+max-width: 300px;
+padding: 0 10px;
+}
+.home-content .text{
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    line-height: 1.6;
+}
+.about-content{
+     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+ .about-content{
+     display: flex;
+   flex-direction: column;
+   gap: 35px;
+  justify-content: center;
+    align-items: center;
+   
+ }
+
+.main-container[class^="box-"]{
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    font-size: 14px;
+
+}
+.box-3 {
+    height: fit-content;
+}
+
+.box-7{
+    height: fit-content;
+}
+.box-6{
+    height: fit-content;
+}
+
+.skills-container{
+     padding: 0 ;
+    margin: 0;
+}
+.skills-container .title-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 ;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.title-2 h1{
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.title-2 h3{
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 10px;
+}
+.skills-icons a{
+width:55px ;
+height: 55px;
+font-size: 1.8rem;
+}
+
+
+/* FOR THE SKILLS PAGE */
+.skills{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.skills-main{
+    padding: 0px;
+    flex-direction: column;
+    gap: 5px;
+}
+.skill-left,
+.skills-right{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+}
+
+/* 480PX AND BELOW */
+
+ @media screen and (max-width: 480px) {
+    /* Fix the navigation sidebar */
+    #menu-icon {
+        display: block !important;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    .navlist {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 200px;
+        height: 100vh;
+        background:#fafafc;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        padding: 90px 30px;
+        transition: all 0.45s ease;
+        z-index: 10000;
+    }
+
+    .navlist.open {
+        right: 0; 
+    }
+    .container{
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        width: auto;
+        border-radius: 25px;
+    }
+.home{
+    display: flex;
+    flex-direction: column-reverse;
+    padding:40px 20px;
+text-align: center;
+}
+.home-content{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    order: 2;
+}
+
+.home-content h1{
+    font-size: 32px;
+    
+}
+.change-text{
+    margin: 10px 0;
+    text-align: left;
+}
+.change-text h3{
+    font-size:22px;
+    text-align: left;
+}
+.home-content p{
+font-size: 20px;
+max-width: 300px;
+padding: 0 10px;
+}
+.home-content .text{
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    line-height: 1.6;
+}
+.about-content{
+     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+ .about-content{
+     display: flex;
+   flex-direction: column;
+   gap: 35px;
+  justify-content: center;
+    align-items: center;
+   
+ }
+
+.main-container[class^="box-"]{
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    font-size: 14px;
+
+}
+.box-1,
+.box-3,
+.box-5,
+.box-6,
+ .box-7{
+    height: fit-content;
+}
+
+
+
+.skills-container{
+     padding: 0 ;
+    margin: 0;
+}
+.skills-container .title-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 ;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.title-2 h1{
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.title-2 h3{
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 10px;
+}
+.skills-icons a{
+width:35px ;
+height: 35px;
+font-size: 1.3rem;
+}
 }
