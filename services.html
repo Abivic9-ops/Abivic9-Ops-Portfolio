@@ -15,11 +15,11 @@
     <div class="container" id="container">
         <header class="header">
             <!-- Navbar Section -->
-            <div class="logo"> <a href="#"><img src="logo.png"></a>
+            <div class="logo"> <a href="index.html"></a>
                 <span>V</span>ictor
             </div>
             <ul class="navlist">
-                <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="index.html" ><i class='bx bx-home'></i> Home</a></li>
                 <li> <a href="about.html"><i class='bx bx-user-circle'></i> About</a></li>
                 <li><a href="services.html"><i class='bx bx-folder'></i> Services</a></li>
                 <li><a href="skills.html"><i class='bx bxs-chart'></i> Skills</a></li>
@@ -131,19 +131,42 @@
                     <li>Digital Strategy Support</li>
                     <li>Problem-Solving Consultation</li>
                 </ul>
-                <!-- <div class="btn-box-1">
-                <a href=# class="btn">Read More</a>
-            </div> -->
+                
 
             </div>
         </div>
-        <!-- <div class="img-about2">
-            <img src="images/n2.png" alt="an office picture or video">
-        </div> -->
-
+        
     </section>
 
+<!-- I used AI for this section -->
+
     <script src="script.js"></script>
+    <script>
+    const menuIcon = document.getElementById("menu-icon");
+    const navList = document.querySelector(".navlist");
+
+    menuIcon.addEventListener("click", () => {
+        navList.classList.toggle("open");
+        menuIcon.classList.toggle("bx-x");
+    });
+
+    // Close menu when a link is clicked (for mobile)
+    document.querySelectorAll(".navlist a").forEach(link => {
+        link.addEventListener("click", () => {
+            navList.classList.remove("open");
+            menuIcon.classList.remove("bx-x");
+        });
+    });
+
+    // Optional: Close menu when resizing to desktop
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            navList.classList.remove("open");
+            menuIcon.classList.remove("bx-x");
+        }
+    });
+</script>
+    
 
 </body>
 
