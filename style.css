@@ -65,6 +65,7 @@ body {
 
 span {
     color: var(--hover-color);
+    font-size: 30px;
 }
 
 /* Format of the Navigation list */
